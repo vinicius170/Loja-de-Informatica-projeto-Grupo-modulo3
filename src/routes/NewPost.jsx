@@ -1,8 +1,20 @@
-import React from 'react'
+
+import Api from "../axios/config"
+import { userState} from "react"
+
+import "./css/NewPost.css"
 
 const NewPost = () => {
   return (
-    <div>NewPost</div>
+    <div className='new'>
+      <h2>Incerir novo produto</h2>
+      <form>
+        <div className='form-control'>
+          <label htmlFor="title">Produto</label>
+          <input type="text" name='title' placeholder='Digite o titulo' />
+        </div>
+      </form>
+    </div>
   )
 }
 

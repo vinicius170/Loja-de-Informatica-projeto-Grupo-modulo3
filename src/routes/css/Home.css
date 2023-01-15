@@ -1,0 +1,44 @@
+*{
+  background-color: blue;
+}
+
+.imgs{
+  width: 184.3px;
+  }
+.computadores{
+  display: flex;
+}
+.compu{
+  border: solid black 5px;
+}
+.compu h2{
+  font-size: 20px;
+  display: inline;
+  width: 250px;
+}
+
+
+.perifericos{
+  display: flex;
+}
+.peri{
+  border: solid black 5px;
+}
+.peri h2{ font-size: 20px;
+  display: inline;
+  width: 250px;
+  
+}
+
+.impressoras{
+  display: flex;
+  padding: 5px;
+}
+.impre{
+  border: solid black 5px;
+}
+.impre h2{
+  font-size: 20px;
+  display: inline;
+  width: 250px;
+}
