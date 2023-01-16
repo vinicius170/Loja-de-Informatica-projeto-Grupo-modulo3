@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import Api from "../axios/config";
 import "./css/Home.css"
+import ModalBto from "../component/ModalButton";
 
 
 const Home = () => {
@@ -40,7 +41,9 @@ return <div >
     <div className="compu" key={posts.id}>
       <img className="imgs" src={posts.imagem} />
      <h2>{posts.nome}</h2>
+     <ModalBto />
     </div>
+    
   )))}</div>
   <div>
     <h1>Perifericos</h1>
@@ -50,6 +53,7 @@ return <div >
      <div className="peri" key={peri.id}>
        <img className="imgs" src={peri.imagem} />
       <h2>{peri.nome}</h2>
+      <ModalBto />    
      </div>
    )))}</div>
   </div>
@@ -61,6 +65,7 @@ return <div >
      <div className="impre" key={Impre.id}>
        <img className="imgs" src={Impre.imagem} />
       <h2>{Impre.nome}</h2>
+      <ModalBto />
      </div>
    )))}</div>
   </div>
