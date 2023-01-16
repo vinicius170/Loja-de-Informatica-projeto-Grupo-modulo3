@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 import Api from "../axios/config";
 import "./css/Home.css"
 import ModalBto from "../component/ModalButton";
+import Modalin from "../component/Modalinfor/Modalinfopc";
 
 
 const Home = () => {
@@ -43,6 +44,7 @@ return <div >
      <h2>{posts.nome}</h2>
      <h3>{posts.valor}</h3>
      <ModalBto />
+     <Modalin />
     </div>
     
   )))}</div>
@@ -69,6 +71,7 @@ return <div >
       <h2>{Impre.nome}</h2>
       <h3>{Impre.valor}</h3>
       <ModalBto />
+
      </div>
    )))}</div>
   </div>
@@ -82,25 +85,3 @@ return <div >
 
 
 export default  Home
-
-
-
-
-
-//     .then(response => {
-//     const data = response.data
-//     console.log(data)
-//     document.getElementById('im').setAttribute('src',data);
-//     return(
-//           <img  />,
-//           <h2 id="nome"></h2>,
-//           <h3 id="id"></h3>,
-//           <SaibaMais />
-      
-        
-//         );
-
-//     }
-//     .catch((erro) => {console.log(erro)})
-// }
-
