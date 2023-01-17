@@ -14,7 +14,7 @@ const Minfo = () => {
     
 
     setPosts(data)
-  
+      console.log(data)
   }
   catch(error){ console.log(error)}
 } 
@@ -31,9 +31,9 @@ return <div >
     <div className="compu" key={posts.id}>
       <h1>{posts.id}</h1>
      <h2>{posts.processador}</h2>
-     <h2>{posts.placa-de-video}</h2>
-     <h2>{posts.Placa-Mae}</h2>
-     <h2>{posts.memoria-ram}</h2>
+     <h2>{posts.PlacaDeVideo}</h2>
+     <h2>{posts.PlacaMae}</h2>
+     <h2>{posts.MemoriaRam}</h2>
      <h2>{posts.ssd}</h2>
     </div>
     
