@@ -6,14 +6,12 @@ function Modalin() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
-    <div className='mod'>
+    <div className="mod">
       <button onClick={() => setModalIsOpen(true)}>Caracteristicas</button>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        
-      >
-        <p><Minfo /></p>
+      <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+        <p>
+          <Minfo />
+        </p>
         <button onClick={() => setModalIsOpen(false)}>Fechar</button>
       </Modal>
     </div>
